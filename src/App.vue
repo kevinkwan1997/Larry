@@ -2,6 +2,7 @@
 <div class="container">
     <Splash id="splash" v-if="loading"/>
     <div id="head">
+            <img id="back-btn" src="./assets/back.png" v-on:click="goBack()"/>
             <h2 id="subtext">Larry</h2>
 
     </div>
@@ -34,6 +35,11 @@ export default {
   },
   components: {
     Splash
+  },
+  methods: {
+    goBack() {
+      this.$router.go(-1);
+    }
   }
 }
 
@@ -43,11 +49,6 @@ export default {
 
 <style >
 
-#head h2 {
-  margin-right: 25px;
-  font-family: 'Lato', sans-serif;
-  font-weight: lighter;
-}
 
 .container {
   width: 100%;
@@ -86,14 +87,28 @@ body {
   width: 100%;
   height: 50px;
   position: absolute;
+  display: flex;
   top: 0;
   background-color: #AFA296;
-  text-align: end;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#head h2 {
+  margin-right: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+}
+
+#back-btn {
+  height: 30px;
+  width: 30px;
+  margin-left: 25px;
 }
 
 #nav {
   background-color: #AFA296;
-  height: 50px;
+  height: 60px;
   bottom: 0;
   position: fixed;
   width: 100%;
