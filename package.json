@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "jQuery": "^1.7.4",
+    "jquery": "^3.6.0",
+    "jquery-confirm": "^3.3.4",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"

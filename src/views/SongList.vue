@@ -1,6 +1,6 @@
 <template>
-  <div class="main">
-    
+  <div>
+      <router-view v-if="this.$route.params.song" ></router-view>
   </div>
 </template>
 
