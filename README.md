@@ -1,4 +1,10 @@
-# larry-client
+# Larry
+
+Larry is your companion for searching song lyrics! Simple Vue project that incorporate the LyricsAPI 
+
+# Project Status
+
+Complete! Lyric search works with preview of song.
 
 ## Project setup
 ```
@@ -8,21 +14,6 @@ npm install
 ### Compiles and hot-reloads for development
 ```
 npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
 
 ### Customize configuration
